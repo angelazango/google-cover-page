@@ -1,0 +1,199 @@
+
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+
+a{
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+
+}
+a:hover{
+  text-decoration: underline;
+}
+nav{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-right:10px  ;
+}
+ul > a,ul > img{
+  padding: 0 8px;
+}
+.header-img:hover{
+  box-shadow: 0 0 10px 0 rgb(209, 65, 65);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/Productsans/v5/HYvgU2fE2nRJvZdjqr5-oayXSOefg.woff2) format('.woff2');
+}
+
+h1{
+  font-family: Product Sans;
+  font-size: 5.5em;
+}
+
+.my-input-container{
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  height: 38px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+}
+.my-input-container:hover{
+box-shadow: 0 0 10px 0 gainsboro;
+
+}
+.my-input-container > input{
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.my-input-container i{
+  cursor: pointer;
+}
+.my- button-container{
+  padding-top: 53px;
+
+}
+button{
+  color: rgb(109, 74, 143);
+   border-radius: 5px;
+    border: none;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 14px ;
+    margin-top: 39px;
+}
+
+button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgb(247, 235, 235);
+}
+
+
+footer{
+  background-color: #f2f2;
+  position: fixed;
+  bottom: 0;
+width: 100vw;
+}
+
+#footer-left{
+  display: flex;
+  justify-self: start;
+  padding-left: 20px;
+  align-items: center;
+
+}
+
+#footer-right{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+align-items: center;
+}
+
+
+
+
+@media(max-width: 630px){
+  #footer-nav{
+      flex-direction: column;
+  }
+
+  #footer-left{
+      justify-content: center;
+
+  }
+
+  #footer-right{
+justify-content: center;
+  }
+
+  .my-input-container{
+      width: 95vw;
+  }
+}
+
+@media( max-height:522px){
+  body{
+overflow: hidden;
+  }
+
+section{
+  margin-bottom: 40px;
+}
+footer{
+  position: relative;
+}
+}
+
+
+@media(max-height:570px) and (max-width:630px){
+  body{
+      overflow-x:hidden ;
+  }
+
+
+  section{
+      margin-bottom: 13px;
+  }
+  footer{
+      position: relative;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-bg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
